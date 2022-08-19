@@ -18,9 +18,21 @@
           </div>
 
           <div class="mb-4">
+            <label for="email" class="form-label text-white text-white"><strong>Apellido</strong></label>
+            <input type="text" class="form-control bg-dark text-white border-primary" id="email" name="LastName"
+              value="{{#if editMode}}{{author.lastName}}{{/if}}" required />
+          </div>
+
+          <div class="mb-4">
             <label for="email" class="form-label text-white text-white"><strong>Correo Electrónico</strong></label>
-            <input type="email" class="form-control bg-dark text-white border-primary" id="email" name="Email"
+            <input type="text" class="form-control bg-dark text-white border-primary" id="email" name="Email"
               value="{{#if editMode}}{{author.email}}{{/if}}" required />
+          </div>
+
+          <div class="mb-4">
+            <label for="email" class="form-label text-white text-white"><strong>Teléfono</strong></label>
+            <input type="text" class="form-control bg-dark text-white border-primary" id="email" name="Phone"
+              value="{{#if editMode}}{{author.phone}}{{/if}}" required />
           </div>
 
 
@@ -30,7 +42,8 @@
 
           {{/if}}
 
-          <button type="submit" class="btn btn-primary float-end mt-2">{{#if editMode}}Actualizar{{else}}Registrar{{/if}}</button>
+          <button type="submit" class="btn btn-primary float-end mt-2">{{#if
+            editMode}}Actualizar{{else}}Registrar{{/if}}</button>
 
           <a href="/admin-authors" class="btn btn-light float-end mt-2 me-2">Volver</a>
         </div>

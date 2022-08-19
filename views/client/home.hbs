@@ -3,7 +3,7 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-bold text-primary">Books Application</h1>
+        <h1 class="fw-bold text-primary">Biblioteca</h1>
         <p class="lead text-white" ><a>Encuentra tu libro favorito entre toda la variedad
           de libros de diferentes categorias, autores y editoriales mostrados a continuación.</a></p>
       </div>
@@ -39,7 +39,7 @@
           <div class="card-body mt-2">
             <h4 class="card-title text-center text-primary">{{this.title}} </h4>
             <p class="fw-light text-white mt-4"><strong>Categoria: </strong> {{this.category.dataValues.name}}</p>
-            <p class="fw-light text-white"><strong>Autor: </strong> {{this.author.dataValues.name}}</p>
+            <p class="fw-light text-white"><strong>Autor: </strong> {{this.author.dataValues.name}} {{this.author.dataValues.lastName}}</p>
             <p class="fw-light text-white"><strong>Editorial: </strong> {{this.editorial.dataValues.name}}</p>
             <p class="fw-light text-white"><strong>Año: </strong> {{this.yearPublished}}</p>
             <input type="hidden" name="BookId" value="{{this.id}}" />

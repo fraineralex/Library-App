@@ -14,10 +14,20 @@ const Authors = sequelize.define("author",{
         type: Sequelize.STRING,
         allowNull: false,
     },
+    lastName:{
+        type: Sequelize.STRING,
+        allowNull: true,
+    },
     email:{
         type: Sequelize.STRING,
         allowNull: false,
+    },
+    phone:{
+        type: Sequelize.STRING,
+        allowNull: true,
     }
+
+    
 })
 
 

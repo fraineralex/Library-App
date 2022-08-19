@@ -17,16 +17,16 @@
   <nav>
     <div class="nav-bar">
       <i class='bx bx-menu sidebarOpen'></i>
-      <span class="logo navLogo"><a href="/">Books App</a></span>
+      <span class="logo navLogo"><a href="/">Biblioteca</a></span>
 
       <div class="menu">
         <div class="logo-toggle">
-          <span class="logo"><a href="/">Books App</a></span>
+          <span class="logo"><a href="/">Biblioteca</a></span>
           <i class='bx bx-x siderbarClose'></i>
         </div>
 
         <ul class="nav-links">
-          <li><a href="/" {{#if homeActive}}class="text-primary" {{/if}}><strong>Home</strong></a></li>
+          <li><a href="/" {{#if homeActive}}class="text-primary" {{/if}}><strong>Inicio</strong></a></li>
           {{#if detailsActive}}<li><a href="#"class="text-primary"><strong>Detalles</strong></a></li>{{/if}}
           <li><a href="/admin-books" {{#if booksActive}}class="text-primary" {{/if}}><strong>Libros</strong></a></li>
           <li><a href="/admin-categories" {{#if categoriesActive}}class="text-primary"

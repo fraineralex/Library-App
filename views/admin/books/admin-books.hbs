@@ -27,7 +27,7 @@
                     <h4 class="card-title text-center text-primary text-bold">{{this.title}} </h4>
                     <p class="fw-light text-white mt-3"><strong>Categoria: </strong> {{this.category.dataValues.name}}
                     </p>
-                    <p class="fw-light text-white"><strong>Autor: </strong> {{this.author.dataValues.name}}</p>
+                    <p class="fw-light text-white"><strong>Autor: </strong> {{this.author.dataValues.name}} {{this.author.dataValues.lastName}}</p>
                     <p class="fw-light text-white"><strong>Editorial: </strong> {{this.editorial.dataValues.name}}</p>
                     <p class="fw-light text-white"><strong>Año: </strong> {{this.yearPublished}}</p>
                     <form class="form-delete" action="/delete-book" method="post">

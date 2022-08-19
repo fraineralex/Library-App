@@ -17,7 +17,7 @@
 .shadow{
     text-align: left; 
     font-family: Comic Sans MS; 
-    font-weight:bold; 
+    font-weight:bold;
     font-size: 30px; 
     color: white; 
     text-shadow: -1px 0 #244696, 0 1px #244696, 1px 0 #244696, 0 -1px #244696, -2px 2px 0 #244696, 2px 2px 0 #244696, 1px 1px #244696, 2px 2px #244696, 3px 3px #244696, 4px 4px #244696, 5px 5px #244696, 6px 6px #244696, 7px 7px #244696, 8px 8px #244696, 9px 9px #244696;

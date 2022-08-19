@@ -19,12 +19,12 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body text-white">
-                    <h2 class="card-title text-center shadow mb-4 mt-2">{{book.title}}</h2>
+                    <h2 class="card-title text-center mb-4 mt-2">{{book.title}}</h2>
                     <p class="card-text fw-light"><strong class="fw-bold me-2">Año de publicación: </strong> {{book.yearPublished}}</p>
                     <p class="card-text fw-light"><strong class="fw-bold me-2">Categoria: </strong> {{book.category.dataValues.name}}</p>
-                    <p class="card-text fw-light"><strong class="fw-bold me-2">Autor: </strong> {{book.author.dataValues.name}}</p>
+                    <p class="card-text fw-light"><strong class="fw-bold me-2">Autor: </strong> {{book.author.dataValues.name}} {{book.author.dataValues.lastName}}</p>
                     <p class="card-text fw-light"><strong class="fw-bold me-2">Editorial: </strong> {{book.editorial.dataValues.name}}</p>
-                    <p class="card-text fw-light"><strong class="fw-bold me-2">Teléfono de; editorial: </strong> {{book.editorial.dataValues.phone}}</p>
+                    <p class="card-text fw-light"><strong class="fw-bold me-2">Teléfono deL editorial: </strong> {{book.editorial.dataValues.phone}}</p>
                     <p class="card-text fw-light"><strong class="fw-bold me-2">Pais del editorial: </strong> {{book.editorial.dataValues.country}}</p>
                 </div>
             </div>

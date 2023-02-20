@@ -1,3 +1,4 @@
+require('dotenv').config()
 const path = require("path");
 const express = require("express");
 const expressHbs = require("express-handlebars");
@@ -71,7 +72,10 @@ Editorials.hasMany(Books);
 sequelize
   .sync()
   .then((result) => {
-    app.listen(5001);
+    PORT = process.env.PORT || 5000
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`)
+    });
   })
   .catch((err) => {
     console.log(err);
